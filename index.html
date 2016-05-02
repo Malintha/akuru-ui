@@ -1,0 +1,29 @@
+    <!DOCTYPE html>
+
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./resources/css/basic.css">
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <html>
+      <head>
+        <meta charset="UTF-8">
+        <title>akuru</title>
+      </head>
+      <body class="basic-bg noselect">
+        <div class="container">
+                <h1 class="akuru-bg">akuru</h1>
+                <p class="akuru-bg"><script>document.write("version 1.0.0")</script></p>
+                <!-- All of the Node.js APIs are available in this renderer process. -->
+                <!-- We are using node <script>document.write(process.versions.node)</script>,
+                Chromium <script>document.write(process.versions.chrome)</script>,
+                and Electron <script>document.write(process.versions.electron)</script>. -->
+
+      </div>
+      </body>
+
+      <script>
+        // You can also require other files to run in this process
+        require('./renderer.js')
+      </script>
+    </html>
